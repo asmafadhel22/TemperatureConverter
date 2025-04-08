@@ -4,7 +4,9 @@ public class TemperatureConverter {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Temperature Converter");
+        System.out.println("==================================");
+System.out.println("👋 Welcome to the Temperature Converter!");
+System.out.println("==================================");
         System.out.print("Enter temperature: ");
         double temp = input.nextDouble();
 
