@@ -8,7 +8,7 @@ public class TemperatureConverter {
         System.out.print("Enter temperature: ");
         double temp = input.nextDouble();
 
-        System.out.print("Convert to (C or F): ");
+        System.out.print("Convert to (C, F, or K): ");
         String unit = input.next().toUpperCase();
 
         if (unit.equals("C")) {
@@ -17,6 +17,9 @@ public class TemperatureConverter {
         } else if (unit.equals("F")) {
             double fahrenheit = (temp * 9 / 5) + 32;
             System.out.println("Result: " + fahrenheit + " °F");
+        } else if (unit.equals("K")) {
+            double kelvin = temp + 273.15;
+            System.out.println("Result: " + kelvin + " K");
         } else {
             System.out.println("Invalid unit.");
         }
